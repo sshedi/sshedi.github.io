@@ -2,6 +2,8 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   color: #333;
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -14,10 +16,11 @@ header {
 nav ul {
   list-style-type: none;
   padding: 0;
+  text-align: center; /* Center navigation for better mobile layout */
 }
 
 nav ul li {
-  display: inline;
+  display: inline-block;
   margin-right: 20px;
 }
 
@@ -36,4 +39,16 @@ footer {
   padding: 10px;
   background-color: #6a1b9a;
   color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block; /* Stack navigation links vertically on small screens */
+    margin: 10px 0;
+  }
+
+  header, main, footer {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
 }
