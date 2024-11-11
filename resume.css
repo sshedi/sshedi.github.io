@@ -6,7 +6,7 @@ body {
 }
 
 .sidebar {
-  background-color: #FAF0E1; /* Buff color */
+  background-color: #E0F7FF; /* Light Blue color */
   width: 25%;
   padding: 20px;
   box-sizing: border-box;
@@ -91,4 +91,32 @@ body {
     width: 100%;
     padding: 15px;
   }
+
+  /* Ensure the button is visible on mobile */
+  .download-btn {
+    display: block; /* Always visible on mobile */
+  }
+}
+
+/* Style for floating download button */
+.download-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;  /* Positioned 20px from the bottom */
+  left: 20px;    /* Positioned 20px from the left */
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Show the button when mouse hovers over the page */
+body:hover .download-btn {
+  display: block;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
 }
