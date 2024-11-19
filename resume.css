@@ -120,3 +120,32 @@ body:hover .download-btn {
 .download-btn:hover {
   background-color: #0056b3;
 }
+
+/* Styling for the Home button in resume */
+nav {
+  margin: 20px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF; /* Blue background */
+  color: white; /* White text */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  font-weight: bold; /* Bold text */
+}
+
+nav ul li a:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
